@@ -74,6 +74,18 @@ export function PostCard({ post }: PostCardProps) {
                 <span>💬</span>
                 <span>{post.commentCount}</span>
               </span>
+              <button
+                onClick={(e) => {
+                  e.preventDefault();
+                  setLikeCount(prev => prev + 1);
+                  navigator.clipboard.writeText(`${typeof window !== 'undefined' ? window.location.origin : ''}/post/${post.id}`).catch(() => {});
+                }}
+                className="flex items-center gap-1 hover:text-blue-400 transition-colors"
+                aria-label="Share"
+              >
+                <span>↗️</span>
+                <span>Share</span>
+              </button>
             </div>
           </div>
         </div>
