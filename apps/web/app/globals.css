@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.brainrot-logo {
+  font-style: italic;
+  text-shadow: 2px 3px 0 #7e22ce;
+  letter-spacing: -0.05em;
+  font-weight: 900;
+}
