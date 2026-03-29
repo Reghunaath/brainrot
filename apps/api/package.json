@@ -1,0 +1,23 @@
+{
+  "name": "api",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "lint": "next lint",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "better-sqlite3": "^9.4.3",
+    "drizzle-orm": "^0.30.10",
+    "next": "^14.2.29"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.8",
+    "@types/node": "^20.14.10",
+    "@types/react": "^18.3.3",
+    "typescript": "^5.3.3",
+    "vitest": "^1.6.0"
+  }
+}
